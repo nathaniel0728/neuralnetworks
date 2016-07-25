@@ -1,7 +1,3 @@
-package us.ihmc.exampleSimulations.centeredRod;
-
-import org.lwjgl.Sys;
-
 import java.util.ArrayList;
 import java.util.Map;
 import java.util.Random;

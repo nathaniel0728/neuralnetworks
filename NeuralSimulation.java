@@ -1,5 +1,3 @@
-package us.ihmc.exampleSimulations.centeredRod;
-
 import java.util.*;
 
 public class NeuralSimulation {
@@ -32,10 +30,11 @@ public class NeuralSimulation {
         double[] h = {1.0,1.0,0.0};
         data.add(h);
         //data= generateTicTacToeData();
-        RBFNeural neural = new RBFNeural(2, 1, data);
+        //RBFNeural neural = new RBFNeural(2, 1, data);
 
 
         //data = generateTicTacToeData();
+        Neural neural = new Neural(2,2,1,data,10000);
         //Neural neural = new Neural(9, 6, 9, data, 3000);
         //playGame(neural);
 

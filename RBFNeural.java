@@ -1,13 +1,8 @@
-package us.ihmc.exampleSimulations.centeredRod;
-
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
 
-/**
- * Created by ShadyLady on 7/19/2016.
- */
 public class RBFNeural {
 
     private static ArrayList<double[]> inputs;

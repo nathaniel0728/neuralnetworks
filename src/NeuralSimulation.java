@@ -21,23 +21,38 @@ public class NeuralSimulation {
 //        data.add(j);
 //        Neural neural = new Neural(3, 3, 3, data, 10000);
 
-        double[] d = {1.0,0.0,1.0};
-        data.add(d);
-        double[] f = {0.0,1.0,1.0};
-        data.add(f);
-        double[] g = {0.0,0.0,0.0};
-        data.add(g);
-        double[] h = {1.0,1.0,0.0};
-        data.add(h);
+//        double[] d = {1.0,0.0,1.0};
+//        data.add(d);
+//        double[] f = {0.0,1.0,1.0};
+//        data.add(f);
+//        double[] g = {0.0,0.0,0.0};
+//        data.add(g);
+//        double[] h = {1.0,1.0,0.0};
+//        data.add(h);
         //data= generateTicTacToeData();
         //RBFNeural neural = new RBFNeural(2, 1, data);
-
+        
+        data = generateAddData();
 
         //data = generateTicTacToeData();
         Neural neural = new Neural(2,2,1,data,10000);
         //Neural neural = new Neural(9, 6, 9, data, 3000);
         //playGame(neural);
 
+    }
+    public static void generateAddData()
+    {
+        for(int x = 0; x < 16; x++){
+            for(int y = 0; y < 16; y++){
+                double[] d = new double[7];
+                d[0] = x;
+                d[1] = y;
+                String converted = Integer.toBinaryString(x+y);
+                for(int q = 0; q < converted.toCharArray().length(); q++)
+                    d[2+q] = 
+                data.add(d);
+            }
+        }
     }
     public static boolean fullGame(double[] b){
         for(double x : b)
